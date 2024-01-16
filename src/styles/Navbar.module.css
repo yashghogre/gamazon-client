@@ -1,0 +1,59 @@
+.mainDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5vw;
+}
+
+.logoDiv {
+    /* background-color: #0C2233; */
+    padding: 0;
+}
+
+.logo {
+    /* mix-blend-mode: screen; */
+    object-fit: contain;
+    height: 15vh;
+    color: #0C2233;
+}
+
+.searchDiv {
+    border: solid 1px white;
+    /* padding: 1vh 1vw; */
+    /* border-radius: 5px; */
+}
+
+.form {
+    display: flex;
+    gap: 0;
+    padding: 1vh 1vw;
+}
+
+.input {
+    height: 4vh;
+    width: 20vw;
+    /* color: white; */
+    background: #0C2233;
+    color: white;
+    border: 0;
+    /* padding: 1vh 1vw; */
+}
+
+.input:focus {
+    outline: none;
+}
+
+.searchBtn {
+    cursor: pointer;
+    border: none;
+}
+
+.searchBtn:hover {
+    cursor: pointer;
+}
+
+.menuDiv {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+}
