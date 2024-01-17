@@ -12,6 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <title>Gamazon - Download Free Games</title>
       <body className={inter.className}>
         <Navbar />
         {children}
