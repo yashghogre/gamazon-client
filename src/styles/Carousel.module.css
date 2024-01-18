@@ -1,0 +1,10 @@
+.mDiv {
+    display: flex;
+    gap: 2vw;
+    overflow-x: scroll
+}
+
+.image {
+    object-fit: contain;
+    width: 90vw;
+}

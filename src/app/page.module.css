@@ -2,6 +2,8 @@
   background-color: #0C2233;
   color: white;
   height: 100vh;
+  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .spOfferTitleDiv {

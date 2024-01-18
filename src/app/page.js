@@ -1,11 +1,14 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import SOTCard from './Components/SOTCard'
+import HomeCarousel from './Components/HomeCarousel'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div>Carousel Comes Here</div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <HomeCarousel />
+      </div>
       <div className={styles.spOfferDiv}>
         <div className={styles.spOfferTitleDiv}>
           <h3>Special Offers</h3>

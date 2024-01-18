@@ -13,7 +13,7 @@ const Navbar = () => {
             <form className={styles.form}>
                 <input placeholder='Search for your game...' className={styles.input} />
                 {/* <input type='submit' name='search' className={styles.searchBtn} /> */}
-                <button type='submit' name='search' classname={styles.searchBtn}><FaSearch /></button>
+                <button type='submit' name='search' className={styles.searchBtn}><FaSearch /></button>
                 {/* <button type='submit' name='search' classname={styles.searchBtn}>Search</button> */}
             </form>
         </div>
