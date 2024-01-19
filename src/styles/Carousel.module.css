@@ -1,7 +1,8 @@
 .mDiv {
-    display: flex;
+    /* display: flex;
     gap: 2vw;
-    overflow-x: scroll
+    overflow-x: scroll */
+    /* height: 50vh; */
 }
 
 .image {

@@ -1,9 +1,11 @@
 .main {
   background-color: #0C2233;
   color: white;
-  height: 100vh;
+  /* height: 100vh; */
   overflow-x: hidden;
-  overflow: hidden;
+  /* overflow: hidden; */
+  margin-bottom: 10vh;
+  /* width: 90vw; */
 }
 
 .spOfferTitleDiv {

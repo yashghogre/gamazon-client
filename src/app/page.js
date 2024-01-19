@@ -6,9 +6,9 @@ import HomeCarousel from './Components/HomeCarousel'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh' }}>
         <HomeCarousel />
-      </div>
+      </div> */}
       <div className={styles.spOfferDiv}>
         <div className={styles.spOfferTitleDiv}>
           <h3>Special Offers</h3>
