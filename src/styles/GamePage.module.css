@@ -1,0 +1,43 @@
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.img {
+    object-fit: contain;
+    height: 40vh;
+}
+
+.infoDiv {
+    display: flex;
+    gap: 5vw;
+    margin-top: 5vh;
+}
+
+.sIDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.526);
+}
+
+.btnDiv {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+}
+
+.btn {
+    padding: 2vh 1vw;
+    font-size: 1.1vw;
+    border-radius: 10px;
+    /* border: solid 1px black; */
+    background-color: white;
+    color: #0C2233;
+    cursor: pointer;
+}
