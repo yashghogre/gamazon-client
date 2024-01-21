@@ -40,4 +40,11 @@
     background-color: white;
     color: #0C2233;
     cursor: pointer;
+    transition: all 0.75s;
+}
+
+.btn:hover {
+    border: solid 1px white;
+    color: white;
+    background-color: black;
 }

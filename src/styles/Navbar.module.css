@@ -11,7 +11,7 @@
 }
 
 .logo {
-    /* mix-blend-mode: screen; */
+    mix-blend-mode: screen;
     object-fit: contain;
     height: 15vh;
     color: #0C2233;
@@ -33,7 +33,8 @@
     height: 4vh;
     width: 20vw;
     /* color: white; */
-    background: #0C2233;
+    /* background: #0C2233; */
+    background: black;
     color: white;
     border: 0;
     /* padding: 1vh 1vw; */

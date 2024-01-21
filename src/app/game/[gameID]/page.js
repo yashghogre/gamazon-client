@@ -45,11 +45,11 @@ const gameID = ({ params }) => {
                     <div>
                         <div className={styles.mainDiv}>
                             <div>
-                                <Image src={'/k1.jpeg'} height={500} width={500} alt="game-image" className={styles.img} />
+                                <Image src={'/k2.jpeg'} height={500} width={500} alt="game-image" className={styles.img} />
                             </div>
                             <div>
                                 <div className={styles.nameDiv}>
-                                    <h1>{value.name}</h1>
+                                    <h2>{value.name}</h2>
                                 </div>
                                 <div className={styles.infoDiv}>
                                     <div className={styles.sIDiv} style={{ width: '20vw' }}>
