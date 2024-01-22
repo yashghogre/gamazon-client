@@ -1,10 +1,25 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import styles from '@/styles/Navbar.module.css'
 import Image from 'next/image'
 import { FaSearch } from "react-icons/fa";
+import { RiArrowDropDownLine } from "react-icons/ri";
 import Link from 'next/link';
+import DropdownNav from './DropdownNav';
 
 const Navbar = () => {
+
+    const [isVisible, setIsVisible] = useState(false)
+
+    const handleMouseEnter = () => {
+        setIsVisible(true)
+    }
+
+    const handleMouseLeave = () => {
+        setIsVisible(false)
+    }
+
     return (
         <div className={styles.mainDiv}>
             <div className={styles.logoDiv}>
@@ -21,7 +36,14 @@ const Navbar = () => {
                 </form>
             </div>
             <div className={styles.menuDiv}>
-                <p>Genre</p>
+                <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={styles.genreDiv}>
+                    <p style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} >Genre<RiArrowDropDownLine />
+                    </p>
+                    <div>
+                        {isVisible && <DropdownNav />}
+                        {/* <DropdownNav /> */}
+                    </div>
+                </div>
                 <p>Login</p>
                 <p>SignUp</p>
             </div>

@@ -1,20 +1,24 @@
 .mmDiv {
     display: flex;
     cursor: pointer;
+    border-radius: 50px;
 }
 
 .mainDiv {
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 1vh;
-    background: #1C6E92;
+    /* background: #1C6E92; */
+    background: #2f3030;
     margin-left: 2vw;
     /* border: solid 1px black; */
     /* padding: 2vh 0vw; */
 }
 
 .title, .tagline, .offerDiv, .titleDiv, .taglineDiv, .imageDiv {
-    background-color: #1C6E92;
+    /* background-color: #1C6E92; */
+    background-color: #2f3030;
 }
 
 .title, .tagline {
@@ -28,11 +32,15 @@
 
 .offer {
     background: green;
-    width: 50%;
+    width: 45%;
     margin-left: 1vw;
-    color: #BEEE11;
+    /* color: #BEEE11; */
+    color: whitesmoke;
+    /* border-radius: 5px; */
+    font-size: 1.4vw;
 }
 
 .offerDiv {
     margin-bottom: 2vh;
+    /* margin-bottom: 2vh; */;
 }
