@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import SOTCard from './Components/SOTCard'
 import HomeCarousel from './Components/HomeCarousel'
+import GameCard from './Components/GameCard'
 
 export default function Home() {
   return (
@@ -18,6 +19,17 @@ export default function Home() {
           <SOTCard link='/' img='/img2.jpg' title='MidWeek Deal' tagline='Offer ends 22 Jan @ 11:30pm.' offer='Up to -40% ' />
           <SOTCard link='/' img='/img3.jpg' title='MidWeek Deal' tagline='Offer ends 18 Jan @ 11:30pm.' offer='Up to -90% ' />
           <SOTCard link='/' img='/img4.png' title='MidWeek Deal' tagline='Offer ends 18 Jan @ 11:30pm.' offer='Up to -25% ' />
+        </div>
+      </div>
+      <div>
+        <div className={styles.DAGTitleDiv}>
+          <h3>Discover <span style={{backgroundColor: 'red', paddingLeft: '2px', paddingRight: '2px', borderRadius: '2px'}}>Action</span> Games</h3>
+        </div>
+        <div className={styles.DAGCards}>
+          <GameCard img='/cs2.jpg' name='Counter Strike 2' offerTill='Offer ends on 31st' offer='-69%' price='555' />
+          <GameCard img='/cs2.jpg' name='Counter Strike 2' offerTill='Offer ends on 31st' offer='-69%' price='555' />
+          <GameCard img='/cs2.jpg' name='Counter Strike 2' offerTill='Offer ends on 31st' offer='-69%' price='555' />
+          <GameCard img='/cs2.jpg' name='Counter Strike 2' offerTill='Offer ends on 31st' offer='-69%' price='555' />
         </div>
       </div>
     </main>

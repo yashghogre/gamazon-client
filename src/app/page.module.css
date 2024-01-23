@@ -1,5 +1,5 @@
 .main {
-  background-color: #0C2233;
+  background-color: black;
   color: white;
   /* height: 100vh; */
   overflow-x: hidden;
@@ -18,4 +18,17 @@
   display: flex;
   justify-content: center;
 
+}
+
+.DAGTitleDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.DAGCards {
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 10vw; */
 }
