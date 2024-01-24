@@ -32,15 +32,16 @@
 
 .offer {
     background: green;
-    width: 45%;
+    width: 48%;
     margin-left: 1vw;
     /* color: #BEEE11; */
     color: whitesmoke;
     /* border-radius: 5px; */
     font-size: 1.4vw;
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;
 }
 
 .offerDiv {
     margin-bottom: 2vh;
-    /* margin-bottom: 2vh; */;
 }

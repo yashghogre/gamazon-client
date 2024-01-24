@@ -44,8 +44,8 @@ const Navbar = () => {
                         {/* <DropdownNav /> */}
                     </div>
                 </div>
-                <p>Login</p>
-                <p>SignUp</p>
+                <p><Link href={'/login'} style={{textDecoration: 'none'}}>Login</Link></p>
+                <p><Link href={'/signup'} style={{textDecoration: 'none'}}>SignUp</Link></p>
             </div>
         </div>
     )
