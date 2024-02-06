@@ -28,7 +28,7 @@ const page = () => {
                         <button className={styles.btn}>Sign-Up</button>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Link href='/signup' style={{ textDecoration: 'none' }}><p style={{ color: 'blue' }}>Already a user?</p></Link>
+                        <Link href='/login' style={{ textDecoration: 'none' }}><p style={{ color: '#4169E1' }}>Already a user?</p></Link>
                     </div>
                 </form>
             </div>

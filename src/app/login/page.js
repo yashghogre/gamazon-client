@@ -6,7 +6,7 @@ const page = () => {
     return (
         <div>
             <div className={styles.mDiv}>
-                <h3 className={styles.loginTitle}>Sign-up</h3>
+                <h3 className={styles.loginTitle}>Login</h3>
                 <form className={styles.form}>
                     <div className={styles.inDiv}>
                         <label className={styles.label}>email</label>
@@ -20,7 +20,7 @@ const page = () => {
                         <button className={styles.btn}>Sign-Up</button>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Link href='/signup' style={{ textDecoration: 'none' }}><p style={{ color: 'blue' }}>New User?</p></Link>
+                        <Link href='/signup' style={{ textDecoration: 'none' }}><p style={{ color: '#4169E1' }}>New User?</p></Link>
                     </div>
                 </form>
             </div >
