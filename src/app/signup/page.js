@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '@/styles/Signup.module.css'
+import Link from 'next/link'
 
 const page = () => {
     return (
@@ -25,6 +26,9 @@ const page = () => {
                     </div>
                     <div className={styles.btnDiv}>
                         <button className={styles.btn}>Sign-Up</button>
+                    </div>
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Link href='/signup' style={{ textDecoration: 'none' }}><p style={{ color: 'blue' }}>Already a user?</p></Link>
                     </div>
                 </form>
             </div>
