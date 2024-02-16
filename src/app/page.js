@@ -4,6 +4,7 @@ import SOTCard from './Components/SOTCard'
 import HomeCarousel from './Components/HomeCarousel'
 import GameCard from './Components/GameCard'
 import Link from 'next/link'
+import Footer from './Components/Footer'
 
 export default function Home() {
   return (
@@ -40,6 +41,9 @@ export default function Home() {
             <GameCard img='/cs2.jpg' name='Counter Strike 2' offerTill='Offer ends on 31st' offer='-69%' price='555' />
           </Link>
         </div>
+      </div>
+      <div className={styles.footerDiv}>
+        <Footer />
       </div>
     </main>
   )

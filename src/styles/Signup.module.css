@@ -20,7 +20,7 @@
     top: 25vh;
 }
 
-.form {
+.fs {
     display: flex;
     flex-direction: column;
     gap: 4vh;
@@ -28,6 +28,10 @@
     border: solid 1px white;
     padding: 6vh 2vw;
     border-radius: 10px;
+}
+
+.lg {
+    font-size: 2vh;
 }
 
 .inDiv {

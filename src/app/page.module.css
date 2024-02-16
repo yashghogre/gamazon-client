@@ -32,3 +32,7 @@
   justify-content: space-evenly;
   /* gap: 10vw; */
 }
+
+.footerDiv {
+  margin-top: 5vh;
+}

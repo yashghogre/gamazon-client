@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(46, 46, 46);
+}
+
+.mainDiv {
+    height: 30vh;
+    background-color: rgb(46, 46, 46);
+}
+
+.titleDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+}

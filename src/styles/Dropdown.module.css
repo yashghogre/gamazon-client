@@ -1,7 +1,7 @@
 .dDDiv {
     padding: 1vh 1vw;
     transition: all 1s linear;
-
+    z-index: 99999;
 }
 
 .listItem {
@@ -11,4 +11,8 @@
 
 .listItem:hover {
     background: gray;
+}
+
+.liLink {
+    text-decoration: none;
 }
