@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import styles from '@/styles/Signup.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import setCookie from '@/app/Components/setCookie'
 // import toast, { Toaster } from 'react-hot-toast'
 
 const page = () => {
@@ -40,7 +41,7 @@ const page = () => {
         })
 
         const resData = res.json()
-        console.log(res.status)
+        console.log(resData)
 
         // setUser({
         //     email: '',
@@ -50,6 +51,7 @@ const page = () => {
 
         if (res.status === 200) {
             // toast.success('User Logged in Successfully!')
+            setCookie(user.email)
             router.push('/')
         }
     }

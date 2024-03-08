@@ -7,6 +7,8 @@ import { FaSearch } from "react-icons/fa";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Link from 'next/link';
 import DropdownNav from './DropdownNav';
+import checkCookie from './checkCookie';
+import Navright from './Navright';
 
 const Navbar = () => {
 
@@ -19,6 +21,10 @@ const Navbar = () => {
     const handleMouseLeave = () => {
         setIsVisible(false)
     }
+
+    const isUserLogin = checkCookie()
+    const userLogin = isUserLogin.PromiseState
+    console.log(userLogin)
 
     return (
         <div className={styles.mainDiv}>
@@ -44,8 +50,13 @@ const Navbar = () => {
                         {/* <DropdownNav /> */}
                     </div>
                 </div>
-                <p><Link href={'/login'} style={{textDecoration: 'none'}}>Login</Link></p>
-                <p><Link href={'/signup'} style={{textDecoration: 'none'}}>SignUp</Link></p>
+                {/* {
+                    userLogin ? null : <div>
+                    <p><Link href={'/login'} style={{ textDecoration: 'none' }}>Login</Link></p>
+                    <p><Link href={'/signup'} style={{ textDecoration: 'none' }}>SignUp</Link></p>
+                </div>
+                } */}
+                <Navright />
             </div>
         </div>
     )
