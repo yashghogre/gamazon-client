@@ -2,9 +2,6 @@
 
 import { cookies } from 'next/headers'
 
-const checkCookie = () => {
-    const hasCookie = cookies().has('email')
-    return hasCookie
-}
+const checkCookie = cookies().has('email')
 
 export default checkCookie

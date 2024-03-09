@@ -1,16 +1,22 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '@/styles/Navbar.module.css'
 import Image from 'next/image'
 import { FaSearch } from "react-icons/fa";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Link from 'next/link';
 import DropdownNav from './DropdownNav';
-import checkCookie from './checkCookie';
-import Navright from './Navright';
+import { VscAccount } from "react-icons/vsc";
 
 const Navbar = () => {
+
+    const [user, setUser] = useState(null)
+
+    useEffect(() => {
+        setUser(localStorage.getItem('email'))
+        console.log(user)
+    }, [])
 
     const [isVisible, setIsVisible] = useState(false)
 
@@ -22,9 +28,9 @@ const Navbar = () => {
         setIsVisible(false)
     }
 
-    const isUserLogin = checkCookie()
-    const userLogin = isUserLogin.PromiseState
-    console.log(userLogin)
+    // const isUserLogin = checkCookie
+    // const userLogin = checkCookie
+    // console.log(checkCookie)
 
     return (
         <div className={styles.mainDiv}>
@@ -47,16 +53,20 @@ const Navbar = () => {
                     </p>
                     <div>
                         {isVisible && <DropdownNav />}
-                        {/* <DropdownNav /> */}
                     </div>
                 </div>
-                {/* {
-                    userLogin ? null : <div>
-                    <p><Link href={'/login'} style={{ textDecoration: 'none' }}>Login</Link></p>
-                    <p><Link href={'/signup'} style={{ textDecoration: 'none' }}>SignUp</Link></p>
-                </div>
-                } */}
-                <Navright />
+                {user ?
+                    <Link href={'/account'} style={{textDecoration: 'none'}}>
+                        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}>
+                            <VscAccount size={25} />
+                            <p>My Account</p>
+                        </div>
+                    </Link> :
+                    <div style={{ display: 'flex', gap: '5vw' }}>
+                        <p><Link href={'/login'} style={{ textDecoration: 'none' }}>Login</Link></p>
+                        <p><Link href={'/signup'} style={{ textDecoration: 'none' }}>SignUp</Link></p>
+                    </div>
+                }
             </div>
         </div>
     )
